@@ -280,6 +280,16 @@ overflow-x: hidden!important;
 
   gtag('config', 'AW-11307033692');
 </script>
+<script>
+  // Evitar que o navegador restaure a rolagem automaticamente para os planos
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.scrollTo(0, 0);
+  window.addEventListener('load', function() {
+    window.scrollTo(0, 0);
+  });
+</script>
 </head>
 <body class="wp-singular page-template page-template-elementor_canvas page page-id-8496 wp-theme-hello-elementor elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-8496">
 <!-- Google Tag Manager (noscript) -->
